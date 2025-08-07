@@ -1,2 +1,2 @@
 # guojizhongwenjiaoyu
-infomation about guojizhongwenjiaoyu
+国际中文教育相关学习网站与信息汇总，主要包括经典网站、主流教学平台、经典著作、论文、工具链接等。
