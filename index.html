@@ -217,8 +217,12 @@
         // 为资源链接添加点击事件
         document.querySelectorAll('.resources-list a').forEach(link => {
             link.addEventListener('click', function(e) {
-                e.preventDefault();
-                alert('即将跳转到: ' + this.textContent);
+                // 只对占位符链接启用模拟点击，对实际链接不阻止默认行为
+                if(this.getAttribute('href') === '#') {
+                    e.preventDefault();
+                    alert('即将跳转到: ' + this.textContent);
+                }
+                // 对于实际链接(platforms.html)，不阻止默认行为，让其正常跳转
             });
         });
     </script>
