@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线数据平台 - 国际中文教育资源中心</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .breadcrumb {
+            margin-bottom: 2rem;
+        }
+
+        .breadcrumb a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .platform-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .platform-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .platform-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .platform-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .platform-card h3 a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .platform-card h3 a:hover {
+            text-decoration: underline;
+        }
+
+        .platform-card p {
+            margin-bottom: 1rem;
+            color: #666;
+        }
+
+        .platform-url {
+            display: inline-block;
+            background: #f1f3f4;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            word-break: break-all;
+            margin-bottom: 1rem;
+        }
+
+        .platform-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: #888;
+            border-top: 1px solid #eee;
+            padding-top: 1rem;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 1rem 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .platform-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="hero">
+                <h1>在线数据平台</h1>
+                <p>中文语料库、数据库及其他语言学习数据资源</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumb">
+            <a href="index.html">首页</a> > 在线数据平台
+        </div>
+
+        <section class="platform-grid">
+            <div class="platform-card">
+                <h3><a href="http://bcc.blcu.edu.cn/" target="_blank">BCC语料库</a></h3>
+                <p>北京语言大学语料库中心，提供现代汉语语料库资源，包含多种文本类型。</p>
+                <div class="platform-url">http://bcc.blcu.edu.cn/</div>
+                <div class="platform-meta">
+                    <span>收费模式: 免费</span>
+                    <span>语言: 中文</span>
+                </div>
+            </div>
+
+            <div class="platform-card">
+                <h3><a href="http://corpus.njau.edu.cn/" target="_blank">新时代人民日报语料库(NEPD)</a></h3>
+                <p>南京农业大学开发的语料库，涵盖新时代人民日报的新闻文本，用于人文计算和社会计算研究。</p>
+                <div class="platform-url">http://corpus.njau.edu.cn/</div>
+                <div class="platform-meta">
+                    <span>收费模式: 免费</span>
+                    <span>语言: 中文</span>
+                </div>
+            </div>
+
+            <div class="platform-card">
+                <h3><a href="http://ccl.pku.edu.cn/ccgd/" target="_blank">现代汉语构式数据库</a></h3>
+                <p>北京大学中国语言学研究中心开发，专门收录现代汉语构式信息的数据库。</p>
+                <div class="platform-url">http://ccl.pku.edu.cn/ccgd/</div>
+                <div class="platform-meta">
+                    <span>收费模式: 免费</span>
+                    <span>语言: 中文</span>
+                </div>
+            </div>
+
+            <div class="platform-card">
+                <h3><a href="http://hsk.blcu.edu.cn/" target="_blank">HSK动态作文语料库</a></h3>
+                <p>北京语言大学开发的HSK动态作文语料库，收录了大量中文学习者的作文数据。</p>
+                <div class="platform-url">http://hsk.blcu.edu.cn/</div>
+                <div class="platform-meta">
+                    <span>收费模式: 免费</span>
+                    <span>语言: 中文</span>
+                </div>
+            </div>
+
+            <div class="platform-card">
+                <h3><a href="http://qqk.blcu.edu.cn/#/login" target="_blank">全球汉语中介语语料库</a></h3>
+                <p>北京语言大学建设的全球汉语中介语语料库建设与应用综合平台。</p>
+                <div class="platform-url">http://qqk.blcu.edu.cn/#/login</div>
+                <div class="platform-meta">
+                    <span>收费模式: 免费</span>
+                    <span>语言: 中文</span>
+                </div>
+            </div>
+
+            <div class="platform-card">
+                <h3><a href="http://words.sinica.edu.tw/" target="_blank">搜文解字</a></h3>
+                <p>台湾国科会数位博物馆先导计划中的汉字研究平台，提供汉字字形、字义等信息。</p>
+                <div class="platform-url">http://words.sinica.edu.tw/</div>
+                <div class="platform-meta">
+                    <span>收费模式: 免费</span>
+                    <span>语言: 中文</span>
+                </div>
+            </div>
+
+            <div class="platform-card">
+                <h3><a href="http://jhsjk.people.cn/" target="_blank">习近平系列重要讲话数据库</a></h3>
+                <p>收录习近平主席系列重要讲话的官方数据库，可用于政治话语分析。</p>
+                <div class="platform-url">http://jhsjk.people.cn/</div>
+                <div class="platform-meta">
+                    <span>收费模式: 免费</span>
+                    <span>语言: 中文</span>
+                </div>
+            </div>
+
+            <div class="platform-card">
+                <h3><a href="https://lingua.mtsu.edu/chinese-computing/" target="_blank">中文文本计算</a></h3>
+                <p>美国中田纳西州立大学开发的中文文本计算资源平台。</p>
+                <div class="platform-url">https://lingua.mtsu.edu/chinese-computing/</div>
+                <div class="platform-meta">
+                    <span>收费模式: 免费</span>
+                    <span>语言: 英文/中文</span>
+                </div>
+            </div>
+
+            <div class="platform-card">
+                <h3><a href="http://www.langtech.fun:8080/ckb/index" target="_blank">汉语词语搭配知识库</a></h3>
+                <p>提供汉语词语搭配信息的知识库，支持语言教学和研究。</p>
+                <div class="platform-url">http://www.langtech.fun:8080/ckb/index</div>
+                <div class="platform-meta">
+                    <span>收费模式: 免费</span>
+                    <span>语言: 中文</span>
+                </div>
+            </div>
+
+            <div class="platform-card">
+                <h3><a href="https://www.ctmlib.com/main" target="_blank">全球汉语教材库</a></h3>
+                <p>汇聚全球汉语教材资源的在线平台，为教师和学习者提供教材参考。</p>
+                <div class="platform-url">https://www.ctmlib.com/main</div>
+                <div class="platform-meta">
+                    <span>收费模式: 免费/付费</span>
+                    <span>语言: 中文</span>
+                </div>
+            </div>
+
+            <div class="platform-card">
+                <h3><a href="http://corpus.usx.edu.cn/hongloumeng/index.asp" target="_blank">《红楼梦》汉英平行语料库</a></h3>
+                <p>专门收录《红楼梦》中文原文与英文译文的平行语料库，适用于翻译研究。</p>
+                <div class="platform-url">http://corpus.usx.edu.cn/hongloumeng/index.asp</div>
+                <div class="platform-meta">
+                    <span>收费模式: 免费</span>
+                    <span>语言: 中文/英文</span>
+                </div>
+            </div>
+
+            <div class="platform-card">
+                <h3><a href="http://huayu.languagetech.cn/" target="_blank">全球华语语料库</a></h3>
+                <p>收录全球华语新闻文本的语料库，反映不同地区的华语使用情况。</p>
+                <div class="platform-url">http://huayu.languagetech.cn/</div>
+                <div class="platform-meta">
+                    <span>收费模式: 免费</span>
+                    <span>语言: 中文</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 星星在流浪. 保留所有权利.</p>
+            <p>致力于为全球中文学习者提供优质资源</p>
+        </div>
+    </footer>
+</body>
+</html>
